@@ -1,12 +1,10 @@
 'use strict';
 
-function showTitle(){
+function showTitle() {
     console.log('=====================');
     console.log('現在持っているタスクの一覧');
     console.log('=====================');
 }
-
-showTitle();
 
 const tasks = [
     '掃除',
@@ -14,14 +12,16 @@ const tasks = [
     '散歩',
 ];
 
-for (let i = 0; i < tasks.length; i++) {
-    console.log(i + '：' + tasks[i]);
+function listUp() {
+    for (let i = 0; i < tasks.length; i++) {
+        console.log(i + '：' + tasks[i]);
+    }
 }
+
+showTitle();
+listUp();
 
 tasks.push(prompt('タスクを入力してください'));
 
 showTitle();
-
-for (let i = 0; i < tasks.length; i++) {
-    console.log(i + '：' + tasks[i]);
-}
+listUp();
