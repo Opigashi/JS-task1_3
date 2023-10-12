@@ -1,6 +1,6 @@
 'use strict';
 
-function showTitle() {
+const showTitle = () => {
     console.log('=====================');
     console.log('現在持っているタスクの一覧');
     console.log('=====================');
@@ -12,7 +12,7 @@ const tasks = [
     '散歩',
 ];
 
-function listUp() {
+const listUp = () => {
     for (let i = 0; i < tasks.length; i++) {
         console.log(i + '：' + tasks[i]);
     }
